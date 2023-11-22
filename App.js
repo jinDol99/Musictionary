@@ -15,9 +15,13 @@ function MyTabs() {
       <Tab.Navigator
           initialRouteName="Home"
           screenOptions={{
-              tabBarActiveBackgroundColor: "#5e5e5e",
-              tabBarActiveTintColor: "#ffffff",
+              tabBarStyle: {
+                  position: 'absolute',
+                  backgroundColor: "rgb(32,32,35)",
+              },
               tabBarShowLabel: false,
+              tabBarInactiveTintColor: 'rgba(255, 255, 255, 0.4)',
+              tabBarActiveTintColor: 'white',
           }}>
         <Tab.Screen
             name="Search"
